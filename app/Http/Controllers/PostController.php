@@ -3,8 +3,10 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Post; 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -15,6 +17,7 @@ class PostController extends Controller
     {
         //creating fake posts 
         //dd(Post::factory()->create());
+        dd(Auth::user());
         $posts = Post::all();
         // dd($posts); 
 
