@@ -25,3 +25,7 @@ Route::get('/', function () {
 
 Route::resource('posts',PostController::class); 
 Route::resource('photos',PhotoController::class); 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
