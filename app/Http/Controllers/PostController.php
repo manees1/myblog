@@ -15,14 +15,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //creating fake posts 
-        //dd(Post::factory()->create());
-        //dd(Auth::user());
-        $posts = Post::all();
-        // dd($posts); 
+        $posts = Post::paginate(12); // Fetching 12 posts per page
+        return view('posts.index', compact('posts'));
 
-
-        return view('Posts.index', compact('posts'));
     }
 
 
@@ -41,7 +36,6 @@ class PostController extends Controller
     {
         //debugging code
         //dd($request->all());
-
 
         $request->validate([
           'title' => 'required',
@@ -66,25 +60,40 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Post $post)
     {
-        //
+
+    // editing post 
+        return view('posts.edit', compact('post'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Post $post)
     {
-        //
+
+        //this function is to update post 
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+        ]);
+
+        $post->update($request->all());
+
+        return redirect()->route('posts.index')
+                        ->with('success', 'Your Post Updated successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Post $post)
     {
-        //
+        $post->delete();
+
+        return redirect()->route('posts.index')
+                        ->with('success', 'Your Post Deleted Successfully.');
     }
 
 }

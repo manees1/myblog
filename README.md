@@ -1,3 +1,24 @@
+## GitHub Repo https://github.com/manees1/myblog
+
+## Student ID: 220278748
+## Student Name: Manish shrestha
+## Assignment 1 COSC560 Advanced Web Programming 
+This project is built on Laravel and utilizes MySQL database, Node.js, and Bootstrap for the backend infrastructure. The application serves as a basic blog platform with essential CRUD functionalities: creating, reading, updating, and deleting blog posts for registered users.
+
+Key Features:
+User Registration: Users must register to access and utilize the application.
+Blog Management: Registered users can create new blog posts, update existing ones, and delete posts if needed.
+Bootstrap Layout: The application uses Bootstrap to provide a user-friendly and responsive interface.
+Database Configuration: Database connection details, such as credentials, are configured in the .env file, with MySQL being the chosen database engine.
+Blade Templates: CRUD operations are implemented using Laravel's Blade templating system, ensuring efficient management of Create, Read, Update, and Delete functionalities.
+Controller Management: The Post Controller handles the logic and operations for blog posts' CRUD functionalities.
+Database Migration: Migration scripts are employed for creating necessary database tables (users and posts) within the blog_db database.
+Authorization: Authorization mechanisms are implemented to restrict access to authenticated users only.
+
+Unique Features:
+Login Requirement: A mandatory login feature ensures that only authenticated users can access and utilize the application's functionalities, including posting new blogs.
+Bootstrap Table Layout: Posts are displayed in a structured Bootstrap table format, enhancing readability and user interaction.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +85,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
