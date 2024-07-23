@@ -17,7 +17,7 @@ class PostController extends Controller
     {
         //creating fake posts 
         //dd(Post::factory()->create());
-        dd(Auth::user());
+        //dd(Auth::user());
         $posts = Post::all();
         // dd($posts); 
 
