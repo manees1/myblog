@@ -19,6 +19,14 @@ Unique Features:
 Login Requirement: A mandatory login feature ensures that only authenticated users can access and utilize the application's functionalities, including posting new blogs.
 Bootstrap Table Layout: Posts are displayed in a structured Bootstrap table format, enhancing readability and user interaction.
 
+.![image](https://github.com/user-attachments/assets/6bc1e230-76a1-4577-a1cd-1ae18b09835b)
+![image](https://github.com/user-attachments/assets/3ae7c25c-145d-4085-b2bf-6fd421b28957)
+![image](https://github.com/user-attachments/assets/6dd46a84-5bf4-4082-970c-888a374073d5)
+![image](https://github.com/user-attachments/assets/bc8a8c98-701a-4262-a11c-20e5007b35c4)
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -40,7 +48,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel is accessible, powerful, and provides tools required for large, robust applications
 
 ## Learning Laravel
 
