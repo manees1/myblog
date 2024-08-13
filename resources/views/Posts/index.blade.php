@@ -1,12 +1,20 @@
-@extends('layouts.app')
+@extends('layouts.admin_layout')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12">
-            <h2>Blog Posts</h2>
-            <a class="btn btn-primary" href="{{ route('posts.create') }}">Create New Post</a>
+
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Blog Post</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+          <a class="btn btn-primary" href="{{ route('posts.create') }}" class="btn btn-sm btn-outline-secondary">Create New Post</a>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+         
         </div>
-    </div>
+      </div>
+
+   
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">

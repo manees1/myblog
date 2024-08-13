@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 namespace Database\Seeders;
 
@@ -16,4 +16,4 @@ class PostSeeder extends Seeder
         Post::factory()->count(2)->create();
         
     }
-}
+} -->

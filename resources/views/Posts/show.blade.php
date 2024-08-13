@@ -8,6 +8,7 @@
         <li>ID: {{$post->id}}</li>
         <li>Title: {{$post->title}}</li>
         <li>Description: {{$post->content}}</li>
+        <li>Description: {{->content}}</li>
 
    </ul>
 @endsection
