@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -42,4 +43,22 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // Check if the user has the admin role
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+
+    // Check if the user has the author role
+    public function isAuthor()
+    {
+        return $this->role === 'author';
+    }
+
+    // Check if the user has the regular user role
+    public function isUser()
+    {
+        return $this->role === 'user';
+    }
 }

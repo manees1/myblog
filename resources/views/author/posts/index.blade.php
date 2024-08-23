@@ -6,9 +6,8 @@
         <h1 class="h2">Blog Post</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-          <a class="btn btn-primary" href="{{ route('admin.posts.create') }}" class="btn btn-sm btn-outline-secondary">Create New Post</a>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          <a class="btn btn-primary" href="{{ route('author.posts.create') }}" class="btn btn-sm btn-outline-secondary">Create New Post</a>
+            
           </div>
          
         </div>
@@ -37,8 +36,9 @@
             <td>{{ $post->content }}</td>
             <td>
                 <form action="{{ route('admin.posts.destroy',$post->id) }}" method="POST">
-                    <a class="btn btn-success" href="{{ route('admin.posts.show',$post->id) }}">Show</a>
-                    <a class="btn btn-warning" href="{{ route('admin.posts.edit',$post->id) }}">Edit</a> 
+                
+                    <a class="btn btn-success" href="{{ route('author.posts.show',$post->id) }}">Show</a>
+                    <a class="btn btn-warning" href="{{ route('author.posts.edit',$post->id) }}">Edit</a> 
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
@@ -48,6 +48,6 @@
         @endforeach
     </table>
 
-   
+    <!-- {!! $posts->links() !!} -->
 @endsection
 

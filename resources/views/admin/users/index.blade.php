@@ -1,5 +1,5 @@
 <!-- resources/views/admin/users/index.blade.php -->
-@extends('admin.layout')
+@extends('layouts.admin_layout')
 
 @section('content')
     <div class="d-flex justify-content-between align-items-center">
