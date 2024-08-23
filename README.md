@@ -2,6 +2,29 @@
 
 ## Student ID: 220278748
 ## Student Name: Manish shrestha
+
+## Assignment 2 COSC560 Advanced web programming
+In this Assignment I have added Roles of user (Admin, Author and User) for specific premissions. 
+Admin role can manage all users and own posts
+Author role can manage own posts and can comment on all posts
+Role-Based Dashboards: Each user is redirected to their appropriate dashboard based on their role after login.
+
+To begin with, I defined the roles (admin, author, user) in the database and made sure that each new user is given a role during registration.
+
+How to add logic in middleware so that it only allows users who are admin to be able to get access some routes for example if we take user management?
+
+In order to display/hide buttons and other elements on Blade templates based on the logged-in users’ role, conditional statements were put into place.
+
+
+
+## Challenges
+
+ While creating a role in every users I got the issue with previous database and have to delete all data before migrate
+ and middle ware has restrict to access correctly which as tricly to fix it.  Admin could access certail routes withour affecting other functionalities 
+
+ Have to create seeding process once again to create users with appropriate roles involved multiple iterations adjustment. 
+ And with the author layout have to assign buttons according to role , it take some steps with if else condition change in navbar blade. 
+
 ## Assignment 1 COSC560 Advanced Web Programming 
 This project is built on Laravel and utilizes MySQL database, Node.js, and Bootstrap for the backend infrastructure. The application serves as a basic blog platform with essential CRUD functionalities: creating, reading, updating, and deleting blog posts for registered users.
 
