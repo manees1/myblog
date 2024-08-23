@@ -1,4 +1,8 @@
+<<<<<<< HEAD:resources/views/admin/posts/edit.blade.php
 @extends('layouts.admin_layout')
+=======
+@extends('layouts.app')
+>>>>>>> e7ee49c0c8d38d54ff4a5399fb50cc780ac57a61:resources/views/Posts/edit.blade.php
 
 @section('content')
     <div class="row">
@@ -7,7 +11,11 @@
                 <h2>Edit Post</h2>
             </div>
             <div class="pull-right">
+<<<<<<< HEAD:resources/views/admin/posts/edit.blade.php
                 <a class="btn btn-primary" href="{{ route('admin.posts.index') }}"> Back</a>
+=======
+                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
+>>>>>>> e7ee49c0c8d38d54ff4a5399fb50cc780ac57a61:resources/views/Posts/edit.blade.php
             </div>
         </div>
     </div>
@@ -23,7 +31,11 @@
         </div>
     @endif
 
+<<<<<<< HEAD:resources/views/admin/posts/edit.blade.php
     <form action="{{ route('admin.posts.update', $post->id) }}" method="POST">
+=======
+    <form action="{{ route('posts.update', $post->id) }}" method="POST">
+>>>>>>> e7ee49c0c8d38d54ff4a5399fb50cc780ac57a61:resources/views/Posts/edit.blade.php
         @csrf
         @method('PUT')
 

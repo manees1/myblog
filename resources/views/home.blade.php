@@ -15,7 +15,11 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+<<<<<<< HEAD
                     <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Blog Page</a>
+=======
+                    <a class="btn btn-primary" href="{{ route('posts.index') }}">Blog Page</a>
+>>>>>>> e7ee49c0c8d38d54ff4a5399fb50cc780ac57a61
                 </div>
             </div>
         </div>

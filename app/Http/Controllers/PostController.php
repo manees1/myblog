@@ -15,9 +15,14 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::paginate(12); // Fetching 12 posts per page
-        return view('admin.posts.index', compact('posts'));
+        //creating fake posts 
+        //dd(Post::factory()->create());
+        //dd(Auth::user());
+        $posts = Post::all();
+        // dd($posts); 
 
+
+        return view('Posts.index', compact('posts'));
     }
 
 
@@ -62,9 +67,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-
-    // editing post 
-        return view('admin.posts.edit', compact('post'));
+        //
     }
 
     /**
@@ -72,17 +75,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-
-        //this function is to update post 
-        $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-        ]);
-
-        $post->update($request->all());
-
-        return redirect()->route('admin.posts.index')
-                        ->with('success', 'Your Post Updated successfully.');
+        //
     }
 
     /**
@@ -90,10 +83,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        $post->delete();
-
-        return redirect()->route('admin.posts.index')
-                        ->with('success', 'Your Post Deleted Successfully.');
+        //
     }
 
 }

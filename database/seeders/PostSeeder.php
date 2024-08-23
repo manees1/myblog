@@ -16,4 +16,8 @@ class PostSeeder extends Seeder
         Post::factory()->count(2)->create();
         
     }
+<<<<<<< HEAD
 } 
+=======
+} -->
+>>>>>>> e7ee49c0c8d38d54ff4a5399fb50cc780ac57a61
