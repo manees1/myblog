@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.admin_layout')
 
 
 @section('content')
     <h1>Upload Blog Post </h1>
      <a href="{{ url()->previous()}}">Blog Page</a>
-  <form action="{{ route('posts.store')}}" method="POST">
+  <form action="{{ route('admin.posts.store')}}" method="POST">
     @csrf
     <div class="form-group">
         <label for="title">Title</label>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin_layout')
 
 
 @section('content')
@@ -8,6 +8,7 @@
         <li>ID: {{$post->id}}</li>
         <li>Title: {{$post->title}}</li>
         <li>Description: {{$post->content}}</li>
+        
 
    </ul>
 @endsection

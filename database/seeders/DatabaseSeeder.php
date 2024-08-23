@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Post;
+use App\Models\User;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
  class DatabaseSeeder extends Seeder
@@ -11,14 +14,23 @@ use Illuminate\Database\Seeder;
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        //  User::factory(5)
+        //  ->has(Post::factory(10))
+        //  ->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+       // User::factory()->count(2)->create();
+ // Seed users
+ \App\Models\User::factory(10)->create();
 
-        $this->call(PostSeeder::class);
+ // Seed posts for each user
+ $users = User::all();
+
+ foreach ($users as $user) {
+     Post::factory()->count(5)->create([
+         'user_id' => $user->id,
+     ]);
+ }
+        
 
     }
 }

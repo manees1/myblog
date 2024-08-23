@@ -15,7 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    <a class="btn btn-primary" href="{{ route('posts.index') }}">Blog Page</a>
+                    <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Blog Page</a>
                 </div>
             </div>
         </div>

@@ -50,7 +50,7 @@
                         <!-- Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) -->
                         This is Blog Application Assignment 1 <br>COSC560 Advanced Web Programming<br>
                         Please click this button to Access the Application
-                        <a class="btn btn-primary" href="{{ route('posts.index') }}">Blog Page</a>
+                       
                     </div>
                 </div>
             </div>
